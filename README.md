@@ -1,6 +1,6 @@
 ## Intro
 
-A well structured data science project using docker and docker-compose for the nlp-challenge Kaggle competition.
+A well structured data science project using docker and docker-compose for the nlp-challenge Kaggle competition, with the objective of coming up with a high performing disaster tweet predictor from twitter data.
 
 ## Installation
 
