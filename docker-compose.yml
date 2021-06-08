@@ -1,0 +1,16 @@
+version: '2.3'
+
+services:
+  # Run tensorboard with: docker-compose run --rm --entrypoint "tensorboard --logdir=./experiments --bind_all" -p 6006:6006 jupyter
+  jupyter:
+    restart: "always"
+    build:
+      context: tensorflow_models
+    volumes:
+      - ./:/app/
+      - ~/.kaggle:/root/.kaggle
+    runtime: nvidia
+    ports:
+      - 8888:8888
+    # snippet from here: https://u.group/thinking/how-to-put-jupyter-notebooks-in-a-dockerfile/
+    entrypoint: jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root

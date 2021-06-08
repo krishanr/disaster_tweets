@@ -1,0 +1,7 @@
+jupyter==1.0.0
+kaggle==1.5.6
+pandas==1.1.1
+matplotlib==3.3.1
+tf-models-official==2.2.0
+scikit-learn==0.23.2
+plotly==4.14
